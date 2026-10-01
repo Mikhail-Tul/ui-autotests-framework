@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="BaseProject/BaseProject.csproj" />
+  <Project Path="DefectsTests/DefectsTests.csproj" />
+  <Project Path="DispJournalTests/DispJournalTests.csproj" />
+  <Project Path="EquipmentInspectionsTests/EquipmentInspectionsTests.csproj" />
+  <Project Path="ShiftHandoverTests/ShiftHandoverTests.csproj" />
+  <Project Path="ShiftManagerTests/ShiftManagerTests.csproj" />
+  <Project Path="WorkOrdersTests/WorkOrdersTests/WorkOrdersTests.csproj" />
+</Solution>

@@ -1,0 +1,11 @@
+﻿<Project>
+
+  <ItemGroup>
+    <Using Include="Microsoft.Playwright" />
+    <Using Include="BaseProject.Base" />
+    <Using Include="BaseProject.AllureHelpers" />
+    <Using Include="Allure.Net.Commons.Attributes" />
+    <Using Include="Allure.Net.Commons" />
+  </ItemGroup>
+
+</Project>

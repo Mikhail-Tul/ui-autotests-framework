@@ -1,0 +1,79 @@
+﻿[
+  {
+    "name": "🔴 Баг продукта: не выполнен ОР",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*ОР:.*"
+  },
+  {
+    "name": "🔴 Баг продукта: проверка не прошла (assert)",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "🟠 Автотест: невалидный селектор (InvalidSelectorError)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*(InvalidSelectorError|Error while parsing selector|unexpected symbol .* during parsing|Malformed selector).*"
+  },
+  {
+    "name": "🟠 Автотест: strict mode — локатор нашёл несколько элементов",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*strict mode violation.*resolved to \\d+ elements.*"
+  },
+  {
+    "name": "🟠 UI: элемент не виден / перекрыт / вне экрана / нестабилен",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*(element is not visible|element is outside of the viewport|intercepts pointer events|element is not stable|does not have a bounding box).*"
+  },
+  {
+    "name": "🟠 Автотест: элемент отвалился от DOM при действии",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*Element is not attached to the DOM.*"
+  },
+  {
+    "name": "🟠 Автотест: контекст страницы уничтожен навигацией",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*(Execution context was destroyed|Cannot find context with specified id).*"
+  },
+  {
+    "name": "🟠 Автотест: браузер/страница/контекст закрылись или упали",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*(Target page, context or browser has been closed|Browser has been closed|Page crashed|Target closed).*"
+  },
+  {
+    "name": "🌐 Стенд/сеть: страница не загрузилась",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*(net::ERR_|ECONNREFUSED|ECONNRESET|ENOTFOUND|ETIMEDOUT|EAI_AGAIN|socket hang up|connection refused|unable to connect|Navigation failed).*"
+  },
+  {
+    "name": "⏱ Стенд: таймаут навигации (страница не открылась вовремя)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*Navigation timeout of \\d+ ms exceeded.*"
+  },
+  {
+    "name": "⏱ Автотест: таймаут ожидания элемента/действия",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*Timeout \\d+ms exceeded.*"
+  },
+  {
+    "name": "🟠 Стенд: ошибка API (HTTP 4xx/5xx, авторизация, смена)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*API: HTTP \\d+.*"
+  },
+  {
+    "name": "🟠 Стенд: нет/пустые данные в системе (API/Lua)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*Данные:.*"
+  },
+  {
+    "name": "🟠 Автотест: элемент не найден при прокрутке дерева",
+    "matchedStatuses": ["broken"],
+    "messageRegex": "(?i).*Не найден после прокруток.*"
+  },
+  {
+    "name": "🧩 Автотест: прочие падения (Playwright и другие)",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "⚪ Пропущено намеренно",
+    "matchedStatuses": ["skipped"]
+  }
+]

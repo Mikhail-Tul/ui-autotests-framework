@@ -1,0 +1,15 @@
+{
+  "allure": {
+    "directory": "AllureResults",
+    "title": "UI Autotests",
+    "links": [
+      "https://jira.example.com/browse/{issue}",
+      "https://tms.example.com/testcase/{tms}"
+    ],
+    "environment": "staged",
+    "allure": {
+      "links": []
+    }
+  },
+  "_comment": "Шаблон. Скопируйте как allureConfig.json рядом с собранными тестами. При каждом запуске каталог результатов перезаписывается автоматически."
+}

@@ -1,0 +1,23 @@
+﻿# Секреты и локальная конфигурация
+.env
+crew.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Сборка
+[Bb]in/
+[Oo]bj/
+*.exe
+
+# Allure: отчёты содержат скриншоты, DOM-снапшоты и тела запросов
+AllureResults/
+AllureReport/
+AllureHistory/
+.allure-session/
+allure-init.log
+
+# Генерация конфигурации Allure (создаётся при первом запуске)
+UITests/*/allureConfig.json
